@@ -50,6 +50,7 @@
 
 .accordion-title-text {
   font-family: 'PPNeueMontreal-Bold', sans-serif;
+  font-weight: 500;
   font-size: 20px;
   line-height: 35px;
   letter-spacing: 0px;
@@ -167,6 +168,11 @@
   }
 
   .accordion-title-text {
+  font-family: 'PPNeueMontreal-Bold', sans-serif;
+  font-weight: normal;
+  
+}
+  .accordion-title-text {
     font-size: 18px;    /* 🔽 Ajuste para mejor lectura */
     line-height: 28px;
   }
@@ -194,6 +200,12 @@
     width: 100%;
   }
 
+  .accordion-title-text {
+  font-family: 'PPNeueMontreal-Bold', sans-serif;
+  font-weight: normal;
+  
+}
+  
   .accordion-content-row {
     flex-direction: column;
     gap: 20px;
@@ -212,6 +224,12 @@
     width: 100%;
     box-sizing: border-box;
   }
+
+  .accordion-title-text {
+  font-family: 'PPNeueMontreal-Bold', sans-serif;
+  font-weight: normal;
+  
+}
 
   .accordion-content-row {
     flex-direction: column;    /* ✅ apilar imagen y texto */
@@ -249,6 +267,12 @@
   .project-image {
     margin-top: 24px; /* ✅ Baja la imagen para alinearla mejor con el texto */
   }
+
+  .accordion-title-text {
+  font-family: 'PPNeueMontreal-Bold', sans-serif;
+  font-weight: normal;
+  
+}
  .portfolio-section {
     max-width: 1200px;        /* ✅ Limita el ancho máximo de la sección */
     margin: 0 20px;           /* ✅ Margen izquierdo y derecho */
@@ -279,6 +303,12 @@
   .portfolio-section {
     padding-left: 0px; /* ✅ Levemente menor que el resto para moverla a la izquierda */
   }
+
+  .accordion-title-text {
+  font-family: 'PPNeueMontreal-Bold', sans-serif;
+  font-weight: normal;
+  
+}
 }
 
 

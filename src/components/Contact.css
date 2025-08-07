@@ -10,7 +10,7 @@
   font-family: 'Arial Black', sans-serif;
   font-size: 85px;
   line-height: 90px;
-  letter-spacing: -6px;
+  letter-spacing: -4px;
   margin-bottom: 40px;
 }
 
@@ -23,7 +23,7 @@
 
 /* Correo con Montreal-Medium */
 .contact-email {
-  font-family: 'PPNeueMontreal-medium', sans-serif;
+  font-family: 'PPNeueMontreal-Medium', sans-serif;
   font-size: 15px;
   text-decoration: underline;
   text-underline-offset: 8px;
@@ -45,7 +45,7 @@
 
 /* Estilo de redes con Montreal-Book */
 .contact-socials a {
-  font-family: 'PPNeueMontreal-book', sans-serif;
+  font-family: 'PPNeueMontreal-Book', sans-serif;
   font-size: 16px;
   color: #000;
   text-decoration: underline;
@@ -94,12 +94,12 @@
 
 
   .contact-email {
-    font-family: 'PPNeueMontreal-medium';  /* ✅ Fuente de correo */
+    font-family: 'PPNeueMontreal-Medium';  /* ✅ Fuente de correo */
     font-size: 17px;
   }
 
   .contact-socials a {
-    font-family: 'PPNeueMontreal-book';    /* ✅ Fuente para redes */
+    font-family: 'PPNeueMontreal-Book';    /* ✅ Fuente para redes */
     font-size: 17px;
   }
 }
@@ -121,12 +121,12 @@
   }
 
   .contact-email {
-    font-family: 'PPNeueMontreal-medium';
+    font-family: 'PPNeueMontreal-Medium';
     font-size: 17px;          /* ✅ más legible para pantallas más anchas */
   }
 
   .contact-socials a {
-    font-family: 'PPNeueMontreal-book';
+    font-family: 'PPNeueMontreal-Book';
     font-size: 17px;
   }
 }
@@ -148,12 +148,12 @@
   }
 
   .contact-email {
-    font-family: 'PPNeueMontreal-medium';
+    font-family: 'PPNeueMontreal-Medium';
     font-size: 17px;
   }
 
   .contact-socials a {
-    font-family: 'PPNeueMontreal-book';
+    font-family: 'PPNeueMontreal-Book';
     font-size: 17px;
   }
 }
@@ -175,12 +175,12 @@
   }
 
   .contact-email {
-    font-family: 'PPNeueMontreal-medium', sans-serif;
+    font-family: 'PPNeueMontreal-Medium', sans-serif;
     font-size: 16px;
   }
 
   .contact-socials a {
-    font-family: 'PPNeueMontreal-book', sans-serif;
+    font-family: 'PPNeueMontreal-Book', sans-serif;
     font-size: 16px;
   }
 }

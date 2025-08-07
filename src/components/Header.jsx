@@ -52,7 +52,7 @@ const styles = {
     boxSizing: 'border-box'
   },
   name: {
-    fontFamily: 'PPNeueMontreal-medium, sans-serif',
+    fontFamily: 'PPNeueMontreal-Medium, sans-serif',
     fontWeight: 'normal',
     fontSize: '16px',
     letterSpacing: '-0.01em',
@@ -63,8 +63,8 @@ const styles = {
     display: 'block'
   },
   subtext: {
-    fontFamily: 'PPNeueMontreal-medium, sans-serif',
-    fontWeight: '600',
+    fontFamily: 'PPNeueMontreal-Medium, sans-serif',
+    fontWeight: 'normal',
     fontSize: '17px',
     color: '#000',
     letterSpacing: '-0.01em',

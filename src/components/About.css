@@ -9,16 +9,17 @@
 /* ✅ Título "ABOUT" centrado siempre */
 .about-heading {
   font-size: 20px;
-  font-family: 'PPNeueMontreal-medium', sans-serif;
+  font-family: 'PPNeueMontreal-Medium', sans-serif;
   margin-bottom: 40px;
-  font-weight: bold;
+  font-weight: normal;
   letter-spacing: -0.01em;
   text-align: center;
 }
 
 /* ✅ Texto centrado por defecto (en escritorio) */
 .about-text {
-  font-family: 'PPNeueMontreal-medium', sans-serif;
+  font-family: 'PPNeueMontreal-Medium', sans-serif;
+  font-weight: normal;
   font-size: 20px;
   line-height: 1.2;
   margin-bottom: 20px;

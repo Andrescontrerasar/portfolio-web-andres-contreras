@@ -13,9 +13,9 @@ const Contact = () => {
         <div className="contact-links">
           <a
             className="contact-email"
-            href="mailto:contacto@andrescontreras.cl"
+            href="mailto:contact@andrescontreras.com"
           >
-            contacto@andrescontreras.cl
+            contact@andrescontreras.com
           </a>
           <div className="contact-socials">
             <a
