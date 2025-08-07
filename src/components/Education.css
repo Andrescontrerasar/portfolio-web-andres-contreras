@@ -1,0 +1,365 @@
+.education-cert-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 120px 45px;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.left-column {
+  flex: 1;
+  min-width: 280px;
+  max-width: 40%;
+  text-align: left;
+}
+
+.quote {
+  font-family: 'PPNeueMontreal-medium', sans-serif;
+  font-size: 17px;
+  margin-bottom: 20px;
+  color: #000;
+  text-align: left;
+}
+
+.profile-image {
+  width: 50%;
+  max-width: 450px;
+  border-radius: 0px;
+  object-fit: cover;
+  display: block;
+}
+
+.right-column {
+  flex: 1;
+  min-width: 280px;
+  max-width: 55%;
+}
+
+.block {
+  margin-bottom: 40px;
+}
+
+.block-title {
+  font-family: 'PPNeueMontreal-Bold', sans-serif;
+  font-size: 20px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.block p {
+  font-family: 'PPNeueMontreal-Book', sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #000;
+  text-align: left;
+}
+
+.education-intro {
+  font-family: 'PPNeueMontreal-medium', sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.education-content {
+  width: 100%;
+}
+
+.education-line {
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin-top: 110px;
+}
+
+/* ✅ Mobile styles */
+@media screen and (max-width: 768px) {
+  .education-cert-section {
+    padding: 30px 20px 60px;
+    flex-direction: column;
+    gap: 20px;
+    
+  }
+
+  .left-column,
+  .right-column {
+    max-width: 100%;
+  }
+
+  .education-content {
+    text-align: left;
+
+    
+  }
+
+  .block-title {
+    text-align: left;
+  }
+
+  .quote {
+    text-align: left;
+    font-size: 17px;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    max-width: 320px;
+  }
+
+  .profile-image {
+    width: 95%;
+  }
+}
+/* ✅ Mostrar u ocultar versiones móvil/escritorio */
+.desktop-only {
+  display: inline;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 834px) {
+  .education-cert-section {
+    flex-direction: row;               /* ✅ cambia a fila en vez de columna */
+    align-items: flex-start;           /* ✅ alinea al tope */
+    justify-content: space-between;   /* ✅ espacio uniforme */
+    padding: 60px 23px 80px;
+    gap: 40px;
+  }
+
+  .left-column, .right-column {
+    width: 48%;                        /* ✅ proporción más equilibrada */
+    max-width: none;
+    text-align: left;
+    display: block;
+  }
+
+  .quote {
+    font-size: 17px;
+    line-height: 1.2;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .profile-image {
+    width: 87%;
+    max-width: 100%;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .education-content {
+    text-align: left;
+    margin-top: -5px;
+  }
+
+  .block-title {
+    text-align: left;
+  }
+
+  .block p {
+    text-align: left;
+  }
+
+  .education-intro {
+    text-align: left;
+  }
+
+  .education-line {
+    width: 96%;                        /* ✅ línea casi de borde a borde */
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 110px auto 0 auto;         /* ✅ centrada */
+  }
+}
+
+/* ✅ Tablet horizontal (835px–1023px) */
+@media screen and (min-width: 835px) and (max-width: 1023px) {
+  .education-cert-section {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 60px 40px 80px;
+    gap: 50px;
+  }
+
+  .left-column, .right-column {
+    width: 48%;
+    max-width: none;
+    text-align: left;
+    display: block;
+  }
+
+  .quote {
+    font-size: 18px;
+    line-height: 1.4;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .profile-image {
+    width: 100%;
+    max-width: 300px;  /* ✅ imagen más grande para tablet horizontal */
+    display: block;
+    margin-top: 12px;
+  }
+
+  .education-content {
+    text-align: left;
+    margin-top: -5px;
+  }
+
+  .block-title {
+    text-align: left;
+  }
+
+  .block p {
+    text-align: left;
+  }
+
+  .education-intro {
+    text-align: left;
+  }
+
+  .education-line {
+    width: 96%;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 110px auto 0 auto;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .profile-image {
+    max-width: 310px; /* ✅ Agranda la imagen */
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1919px) {
+  .education-cert-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;     /* ✅ Alinea todo a la izquierda */
+    padding: 60px 40px 80px;
+    gap: 40px;
+    box-sizing: border-box;
+    max-width: 1100px;               /* ✅ Limita el ancho total del bloque */
+    margin-left: 0px;               /* ✅ Empuja visualmente hacia la izquierda */
+  }
+
+  .left-column,
+  .right-column {
+    width: 48%;
+    max-width: none;
+    text-align: left;
+    display: block;
+  }
+
+  .quote {
+    font-size: 18px;
+    line-height: 1.3;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .profile-image {
+    width: 75%;
+    max-width: 100%;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .education-content {
+    text-align: left;
+    margin-top: 0 px;
+  }
+
+  .block-title,
+  .block p,
+  .education-intro {
+    text-align: left;
+  }
+
+  .education-line {
+    width: 136%;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 110px auto 0 auto;
+  }
+}
+
+
+@media screen and (min-width: 1920px) {
+  .education-cert-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;  /* Alinea todo a la izquierda */
+    padding: 80px 60px 80px;
+    gap: 60px;
+    box-sizing: border-box;
+    max-width: 1400px;
+    margin-left: 0px;
+  }
+
+  .left-column,
+  .right-column {
+    width: 48%;
+    max-width: none;
+    text-align: left;
+    display: block;
+  }
+
+  .profile-image {
+    width: 85%;
+    max-width: 500px;
+    display: block;
+    margin-top: 15px;
+  }
+
+  .quote {
+    font-size: 19px;
+    line-height: 1.4;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .education-content {
+    text-align: left;
+    margin-top: -5px;
+  }
+
+  .block-title,
+  .block p,
+  .education-intro {
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .education-line {
+    width: 100%;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 120px auto 0 auto;
+  }
+}

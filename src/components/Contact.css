@@ -1,0 +1,187 @@
+.contact-section {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  margin-bottom: 185px; /* ✅ Espacio antes del footer */
+}
+
+.contact-text h2 {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 85px;
+  line-height: 90px;
+  letter-spacing: -6px;
+  margin-bottom: 40px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+/* Correo con Montreal-Medium */
+.contact-email {
+  font-family: 'PPNeueMontreal-medium', sans-serif;
+  font-size: 15px;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 1px;
+  text-transform: uppercase;
+  color: #000;
+}
+.contact-email:hover {
+  text-decoration-thickness: 1px;
+  transition: text-decoration-thickness 0.2s ease;
+}
+
+/* Contenedor horizontal de redes sociales */
+.contact-socials {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+/* Estilo de redes con Montreal-Book */
+.contact-socials a {
+  font-family: 'PPNeueMontreal-book', sans-serif;
+  font-size: 16px;
+  color: #000;
+  text-decoration: underline;
+}
+
+/* 📱 Ajustes solo para móvil */
+@media screen and (max-width: 768px) {
+  .contact-section {
+    padding: 60px 16px;
+    margin-bottom: 90px;
+  }
+
+  .contact-text h2 {
+    font-family: 'ArialBlack', sans-serif;/* ✅ Fallbacks seguros */
+    font-style: black;
+    font-size: 31px;             /* 🔽 Letra más pequeña */
+    line-height: 30px;           /* 🔽 Altura ajustada */
+    letter-spacing: -1px;
+    margin-bottom: 28px;         /* 🔽 Menor espacio con el email */
+    text-transform: uppercase;
+  }
+
+  .contact-email {
+    font-size: 14px;
+  }
+
+  .contact-socials a {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 834px) {
+  .contact-section {
+    padding: 80px 24px;
+    margin-bottom: 120px;
+    font-family: 'Arial', sans-serif; /* ✅ Arial como base general para la sección */
+  }
+
+ .contact-text h2 {
+  font-family: 'ArialBlack', sans-serif;
+  font-style: Black;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  margin-bottom: 32px;
+}
+
+
+  .contact-email {
+    font-family: 'PPNeueMontreal-medium';  /* ✅ Fuente de correo */
+    font-size: 17px;
+  }
+
+  .contact-socials a {
+    font-family: 'PPNeueMontreal-book';    /* ✅ Fuente para redes */
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 835px) and (max-width: 1023px) {
+  .contact-section {
+    padding: 100px 40px;
+    margin-bottom: 120px;
+    font-family: 'Arial', sans-serif; /* ✅ Arial como base general */
+  }
+
+  .contact-text h2 {
+    font-family: 'ArialBlack', sans-serif;
+    font-style: Black;
+    font-size: 52px;          /* ✅ ligeramente más grande que en iPad */
+    line-height: 52px;
+    letter-spacing: -2px;
+    margin-bottom: 36px;
+  }
+
+  .contact-email {
+    font-family: 'PPNeueMontreal-medium';
+    font-size: 17px;          /* ✅ más legible para pantallas más anchas */
+  }
+
+  .contact-socials a {
+    font-family: 'PPNeueMontreal-book';
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .contact-section {
+    padding: 100px 40px;
+    margin-bottom: 120px;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .contact-text h2 {
+    font-family: 'ArialBlack', sans-serif;
+    font-style: Black;
+    font-size: 70px;          /* ✅ un poco más grande que en iPad */
+    line-height: 56px;
+    letter-spacing: -3px;
+    margin-bottom: 36px;
+  }
+
+  .contact-email {
+    font-family: 'PPNeueMontreal-medium';
+    font-size: 17px;
+  }
+
+  .contact-socials a {
+    font-family: 'PPNeueMontreal-book';
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+  .contact-section {
+    padding: 100px 40px 80px 40px; /* ⬅️ antes era 120px, ahora más ajustado abajo */
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    margin-bottom: 155px; /* ⬅️ reduce espacio antes del footer */
+  }
+
+  .contact-text h2 {
+    font-family: 'ArialBlack', sans-serif;
+    font-size: 65px;
+    line-height: 1.1;
+    letter-spacing: -3px;
+    margin-bottom: 36px;
+  }
+
+  .contact-email {
+    font-family: 'PPNeueMontreal-medium', sans-serif;
+    font-size: 16px;
+  }
+
+  .contact-socials a {
+    font-family: 'PPNeueMontreal-book', sans-serif;
+    font-size: 16px;
+  }
+}
+

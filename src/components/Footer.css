@@ -1,0 +1,360 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  width: 100vw;
+  height: auto;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 30px 45px 0;
+}
+
+.footer-content {
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-top-row {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'PPNeueMontreal-medium', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.footer-location,
+.footer-role {
+  width: 30%;
+}
+
+.footer-location {
+  text-align: left;
+}
+
+.footer-role {
+  text-align: right;
+}
+
+.footer-name {
+  font-family: 'ArialBlack', sans-serif;
+  font-size: 165px;
+  letter-spacing: -0.10px;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.marquee-wrapper {
+  overflow: hidden;
+  width: 100vw;
+  margin-left: calc(-45px);
+  padding-bottom: 0;
+}
+
+.marquee {
+  display: flex;
+  animation: marquee 15s linear infinite;
+  font-family: 'ArialBlack', sans-serif;
+  font-size: 190px;
+  letter-spacing: -0.15px;
+  white-space: nowrap;
+  justify-content: start;
+}
+
+.marquee span {
+  padding-right: 80px;
+  flex-shrink: 0;
+  color: #fff;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  .footer {
+    min-height: 30vh;
+  }
+
+  .footer-name {
+    font-family: 'ArialBlack', sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: -2px;
+    text-align: center;
+  }
+
+  .marquee {
+    font-family: 'ArialBlack', sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    line-height: 1;
+  }
+
+  .footer-top-row {
+    font-family: 'PPNeueMontreal-medium', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 16px;
+  }
+
+  .footer-location {
+    width: 50%;
+    text-align: left;
+    margin-left: -45px;
+  }
+
+  .footer-role {
+    width: 50%;
+    text-align: right;
+    margin-right: -45px;
+  }
+}
+
+
+/* ✅ TABLET HORIZONTAL (835px–1023px) */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .footer {
+    min-height: 30vh;
+    padding: 30px 0 0;
+  }
+
+  .footer-content {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+
+  .footer-top-row {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'PPNeueMontreal-medium', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    padding: 0 0px; /* ✅ margen interior ligeramente mayor que en iPad */
+    box-sizing: border-box;
+  }
+
+  .footer-location {
+    width: 50%;
+    text-align: left;
+    padding-left: 20px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .footer-role {
+    width: 30%;
+    text-align: right;
+    padding-right: 20px;
+    box-sizing: border-box;
+    white-space: normal;
+    word-break: break-word;
+    line-height: 1.2;
+  }
+
+  .footer-name {
+    font-family: 'ArialBlack', sans-serif;
+    font-size: 130px;  /* ✅ ligeramente más grande que en iPad */
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: -2px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .marquee-wrapper {
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .marquee {
+    font-size: 130px;
+    font-family: 'ArialBlack', sans-serif;
+    font-weight: bold;
+    letter-spacing: -2px;
+    line-height: 1;
+  }
+}
+
+
+/* ✅ FOOTER - LAPTOP / DESKTOP MEDIANO (1024px–1279px) */
+@media screen and (min-width: 1025px) and (max-width: 1919px) {
+  .footer {
+    min-height: 50vh;
+    padding: 30px 35px 0;
+  }
+
+  .footer-content {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footer-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'PPNeueMontreal-medium', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    padding: 0; /* 🧼 SIN padding interno */
+    box-sizing: border-box;
+  }
+
+  .footer-location {
+    width: 50%;
+    text-align: left;
+    padding-left: 0;     /* ✅ Eliminado */
+    margin-left: 5px;      /* ✅ Eliminado */
+    font-family: 'PPNeueMontreal-medium', sans-serif;
+    font-size: 18px;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+
+  .footer-role {
+    width: 50%;
+    text-align: right;
+    padding-right: 0;    /* ✅ Eliminado */
+    margin-right: 0;     /* ✅ Eliminado */
+    font-family: 'PPNeueMontreal-medium', sans-serif;
+    font-size: 18px;
+    word-break: break-word;
+    line-height: 1.2;
+  }
+
+  .footer-name {
+    font-family: 'ArialBlack', sans-serif;
+    font-size: 150px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: -1.5px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .marquee-wrapper {
+    width: 100vw;
+    overflow: hidden;
+    margin-left: calc(-45px);
+    padding: 0;
+  }
+
+  .marquee {
+    font-size: 170px;
+    font-family: 'ArialBlack', sans-serif;
+    font-weight: bold;
+    letter-spacing: -1.5px;
+    line-height: 1;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .footer {
+    min-height: 50vh;
+    padding: 30px 35px 0;
+  }
+
+  .footer-content {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footer-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'PPNeueMontreal-medium', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    padding: 0; /* 🧼 SIN padding interno */
+    box-sizing: border-box;
+  }
+
+  .footer-location {
+    width: 50%;
+    text-align: left;
+    padding-left: 0;     /* ✅ Eliminado */
+    margin-left: 5px;      /* ✅ Eliminado */
+    font-family: 'PPNeueMontreal-medium', sans-serif;
+    font-size: 18px;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+
+  .footer-role {
+    width: 50%;
+    text-align: right;
+    padding-right: 0;    /* ✅ Eliminado */
+    margin-right: 0;     /* ✅ Eliminado */
+    font-family: 'PPNeueMontreal-medium', sans-serif;
+    font-size: 18px;
+    word-break: break-word;
+    line-height: 1.2;
+  }
+
+  .footer-name {
+    font-family: 'ArialBlack', sans-serif;
+    font-size: 150px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: -1.5px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .marquee-wrapper {
+    width: 100vw;
+    overflow: hidden;
+    margin-left: calc(-45px);
+    padding: 0;
+  }
+
+  .marquee {
+    font-size: 170px;
+    font-family: 'ArialBlack', sans-serif;
+    font-weight: bold;
+    letter-spacing: -1.5px;
+    line-height: 1;
+  }
+}

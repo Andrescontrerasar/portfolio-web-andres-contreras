@@ -1,0 +1,143 @@
+@import './fonts.css';
+
+:root {
+  --font-primary: 'ArialBlack', sans-serif;  /* ✅ ArialBlack embebida */
+  --font-secondary: 'PPNeueMontreal', sans-serif;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-secondary);
+  background-color: #ffffff;
+  color: #000000;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;  /* ✅ Quita el fondo azul al hacer tap en móvil */
+}
+
+/* Enlaces generales */
+a {
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  -webkit-tap-highlight-color: transparent; /* ✅ Evita azul en <a> */
+}
+
+a:hover {
+  color: #4c4c4d;
+}
+
+/* Hover específico para enlaces del menú */
+.nav-link {
+  font-family: 'PPNeueMontreal-medium', sans-serif;
+  font-size: 15px;
+  color: #000000ff;
+  text-decoration: none;
+  font-weight: normal;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nav-link:hover {
+  color: #4c4c4d;
+}
+
+/* Título h1 (por defecto) */
+h1 {
+  font-family: var(--font-primary); /* ✅ ArialBlack */
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin: 0;
+}
+
+/* Botones */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: #fff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:hover {
+  border-color: #000000;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Efecto de letras cayendo */
+.letter-fall {
+  display: inline-block;
+  font-family: 'ArialBlack', sans-serif;  /* ✅ Corrige fuente */
+  font-weight: normal;                    /* ✅ Se usa desde font-face */
+  font-size: 140px;
+  color: #000000;
+  opacity: 0;
+  transform: translateY(100px);
+  animation: fallIn 1.2s ease-out forwards;
+  line-height: 0;
+  letter-spacing: -0.06em;
+}
+
+@keyframes fallIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Ajustes en modo claro */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #4c4c4d;
+  }
+
+  button {
+    background-color: #f9f9f9;
+    color: #000;
+  }
+
+  .nav-link:hover {
+    color: #4c4c4d;
+  }
+}
+
+/* 🔽 Ajuste de tamaño del nombre en móvil */
+@media screen and (max-width: 768px) {
+  .letter-fall {
+    font-size: 30px;
+  }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+/* 💡 Estilos base para la sección About */
+.about-section {
+  padding: 100px 40px;
+  max-width: 900px;
+  margin: 0 auto 0px;
+  text-align: center; /* 🟢 Título y texto centrado por defecto */
+}
+
+/* ✅ Título "ABOUT" centrado siempre */
+.about-heading {
+  font-size: 20px;
+  font-family: 'PPNeueMontreal-medium', sans-serif;
+  margin-bottom: 40px;
+  font-weight: bold;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+/* ✅ Texto centrado por defecto (en escritorio) */
+.about-text {
+  font-family: 'PPNeueMontreal-medium', sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* 📱 En móvil (teléfonos): alinear texto a la izquierda */
+@media screen and (max-width: 768px) {
+  .about-section {
+    padding: 0 20px;
+  }
+
+  .about-heading {
+    margin-top: 0px;
+  }
+
+  .about-text {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+  }
+}
+
+/* 🟢 iPad vertical (426px a 834px): volver a centrar */
+@media screen and (min-width: 426px) and (max-width: 834px) {
+  .about-text {
+    text-align: center;
+  }
+}
+
+/* ✅ Ajuste de padding para LAPTOP GRANDE (1280px a 1535px) */
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+  .about-section {
+    padding: 40px 40px; /* 🔽 Reducimos solo el espacio vertical */
+    margin-bottom: 15px;
+  }
+}
+
+
+
+

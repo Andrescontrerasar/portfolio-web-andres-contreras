@@ -1,0 +1,35 @@
+/* src/components/ScrollToTop.css */
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 16px; /* ✅ Más a la izquierda (antes era 35px) */
+  width: 26px;
+  height: 26px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 9999;
+  padding: 0;
+}
+
+/* Ícono de chevron hacia arriba */
+.scroll-to-top::before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid #1a1a1a;
+  border-bottom: 2px solid #1a1a1a;
+  transform: rotate(-135deg); /* Flecha arriba */
+  margin: auto;
+}
+
+.scroll-to-top:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+
+

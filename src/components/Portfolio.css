@@ -1,0 +1,284 @@
+.portfolio-section {
+  padding: 60px 20px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: 'PPNeueMontreal-Medium', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.01em;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 30px;
+}
+
+.accordion-title {
+  font-family: 'PPNeueMontreal-Bold', sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-align: left;
+  width: 100%;
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.accordion-title:hover {
+  color: #555;
+}
+
+.accordion-title-text {
+  font-family: 'PPNeueMontreal-Bold', sans-serif;
+  font-size: 20px;
+  line-height: 35px;
+  letter-spacing: 0px;
+  margin: 0;
+}
+
+.accordion-sub {
+  font-family: 'PPNeueMontreal-Book', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.accordion-icon {
+  font-size: 22px;
+  transition: transform 0.3s ease;
+}
+
+.accordion-icon.open {
+  transform: rotate(180deg);
+}
+
+.accordion-title:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* ✅ Diseño en columnas para contenido desplegable */
+.accordion-content-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+.accordion-text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 70%;
+  font-family: 'PPNeueMontreal-Book', sans-serif;
+  font-size: 20px;
+  line-height: 1,2;
+  letter-spacing: 0px;
+  color: #000;
+}
+
+/* ✅ Descripción del proyecto */
+.project-description {
+  margin-bottom: 16px;
+  white-space: pre-line;
+}
+
+/* ✅ My role: */
+.project-description strong {
+  font-family: 'PPNeueMontreal-Book', sans-serif;
+  font-weight: bold;
+}
+
+/* ✅ Bullets */
+.project-bullets {
+  padding-left: 20px;
+  margin: 16px 0;
+  font-family: 'PPNeueMontreal-Book', sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000;
+}
+
+/* ✅ Tech stack */
+.project-tech {
+  font-family: 'PPNeueMontreal-Book', sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  color: #000;
+}
+
+/* ✅ Botón GitHub */
+.project-button {
+  font-family: 'PPNeueMontreal-Medium', sans-serif;
+  display: inline-block;
+  margin-top: 14px;
+  padding: 8px 16px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.project-button:hover {
+  background-color: #212121;
+}
+
+/* ✅ Imagen */
+.project-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  background-color: transparent; /* ✅ Esto asegura que no tenga fondo blanco */
+}
+@media screen and (max-width: 768px) {
+  .portfolio-section {
+    padding: 40px 16px; /* 🔽 Menos padding */
+    width: 100%;        /* 🔁 Asegura que no sobrepase el ancho */
+    box-sizing: border-box;
+    padding-right: 19px;
+    padding-left: 22px;
+  }
+
+  .accordion-title-text {
+    font-size: 18px;    /* 🔽 Ajuste para mejor lectura */
+    line-height: 28px;
+  }
+
+  .accordion-sub {
+    font-size: 16px;
+  }
+
+  .accordion-text {
+    max-width: 100%;    /* 🔁 Quepa mejor en pantallas pequeñas */
+    font-size: 18px;
+  }
+
+  .project-bullets {
+    font-size: 18px;
+  }
+
+  .project-tech {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 834px) {
+  .accordion-text {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .accordion-content-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .project-image {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* ✅ PORTAFOLIO - TABLET HORIZONTAL / LAPTOP CHICA (835px–1023px) */
+@media screen and (min-width: 835px) and (max-width: 1023px) {
+  .portfolio-section {
+    padding: 60px 40px;        /* ✅ margen lateral equilibrado */
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .accordion-content-row {
+    flex-direction: column;    /* ✅ apilar imagen y texto */
+    gap: 24px;
+  }
+
+  .accordion-text {
+    max-width: 100%;           /* ✅ ocupa todo el ancho sin desbordes */
+    width: 100%;
+    font-size: 19px;
+  }
+
+  .project-image {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  }
+
+  .project-bullets,
+  .project-tech {
+    font-size: 19px;
+  }
+
+  .accordion-sub {
+    font-size: 17px;
+  }
+
+  .accordion-title-text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .project-image {
+    margin-top: 24px; /* ✅ Baja la imagen para alinearla mejor con el texto */
+  }
+ .portfolio-section {
+    max-width: 1200px;        /* ✅ Limita el ancho máximo de la sección */
+    margin: 0 20px;           /* ✅ Margen izquierdo y derecho */
+    box-sizing: border-box;  /* ✅ Asegura que el ancho total se calcule correctamente */
+  }
+   .portfolio-section {
+    padding-right: 5px;  /* ✅ Mantiene simetría sin centrar del todo */
+  }
+}
+
+
+@media screen and (min-width: 1280px) and (max-width: 1919px) {
+  .portfolio-section {
+    width: 100%;                /* 🔽 ligeramente más angosto que 95% */
+    padding: 60px 40px;        /* ✅ padding lateral balanceado */
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+
+.project-image {
+    align-self: flex-start; /* ✅ Alinea la imagen con el inicio del texto */
+    margin-top: 24px;        /* ✅ Elimina cualquier desplazamiento innecesario */
+  }
+
+
+  @media screen and (min-width: 1920px) {
+  .portfolio-section {
+    padding-left: 0px; /* ✅ Levemente menor que el resto para moverla a la izquierda */
+  }
+}
+
+

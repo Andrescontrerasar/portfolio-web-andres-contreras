@@ -1,0 +1,167 @@
+/* ------------------- */
+/* BOTÓN MENU (solo mobile) */
+/* ------------------- */
+.menu-toggle {
+  display: none;
+  font-family: 'PPNeueMontreal-medium', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #000;
+
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  z-index: 10001;
+}
+
+/* ------------------- */
+/* MENÚ FULLSCREEN     */
+/* ------------------- */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  inset: 0;
+  background-color: white;
+  padding: 120px 30px 30px;
+  font-family: 'PPNeueMontreal-medium', sans-serif;
+  font-size: 36px;
+  gap: 20px;
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out;
+  z-index: 9999;
+  overflow-x: hidden;
+}
+
+/* Enlaces del menú móvil */
+.mobile-menu a {
+  text-decoration: none;
+  color: #000;
+  font-size: 32px;
+  letter-spacing: -0.02em;
+  transition: color 0.3s ease;
+}
+
+.mobile-menu a:hover {
+  color: #4c4c4d;
+}
+
+/* Estado abierto */
+.mobile-menu.open {
+  display: flex;
+  transform: translateX(0);
+}
+
+/* ------------------- */
+/* BODY GLOBAL FIX     */
+/* ------------------- */
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------------- */
+/* VERSIÓN MÓVIL E IPAD VERTICAL (hasta 834px) */
+/* ------------------- */
+@media (max-width: 834px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    display: none !important;
+  }
+
+  header {
+    padding-left: 19px !important;
+    padding-right: 20px !important;
+    box-sizing: border-box;
+  }
+
+  .header-text {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+
+/* ------------------- */
+/* TABLET HORIZONTAL (835px – 1023px) */
+/* Mostrar menú de escritorio con margen interior */
+/* ------------------- */
+@media screen and (min-width: 835px) and (max-width: 1023px) {
+  .menu-toggle {
+    display: none !important; /* oculta el botón "MENU" */
+  }
+
+  nav ul {
+    display: flex !important;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'PPNeueMontreal-medium', sans-serif;
+    font-size: 16px;
+  }
+
+  .mobile-menu {
+    display: none !important;
+  }
+
+  header {
+    padding: 20px 40px; /* ✅ margen interior horizontal */
+    box-sizing: border-box;
+  }
+
+  .header-text {
+    padding: 0;
+    margin: 0;
+  }
+}
+/* ✅ HEADER para LAPTOP / TABLET GRANDE (1024px–1279px) */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .menu-toggle {
+    display: none !important; /* Oculta botón MENU */
+  }
+
+  nav ul {
+    display: flex !important;
+    gap: 32px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'PPNeueMontreal-medium', sans-serif;
+    font-size: 16px;
+  }
+
+  .mobile-menu {
+    display: none !important;
+  }
+
+  header {
+    padding: 24px 60px; /* Más espacioso que tablet, menos que desktop grande */
+    box-sizing: border-box;
+  }
+
+  .header-text {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

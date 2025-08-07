@@ -1,0 +1,494 @@
+/* src/components/Hero.css */
+
+.hero {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 430px 0 85px 0;
+  box-sizing: border-box;
+}
+
+.hero-container {
+  width: 100%;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 43px;
+  box-sizing: border-box;
+}
+
+.hero-left {
+  flex: 1 1 60%;
+}
+
+.hero-right {
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.hero-subtitle {
+  font-family: 'PPNeueMontreal-book', sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.hero-name {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 0 -65px 0;
+}
+
+.hero-image {
+  width: 349px;
+  height: 420px;
+  border-radius: 0%;
+  object-fit: cover;
+  margin-top: -514px;
+  margin-right: -0.5px;
+}
+
+.letter-fall {
+  display: inline-block;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 140px;
+  color: #000000;
+  opacity: 0;
+  transform: translateY(100px);
+  animation: fallIn 1.2s ease-out forwards;
+  line-height: 1;
+  letter-spacing: -0.06em;
+}
+
+.letter-space {
+  display: inline-block;
+  width: 4px;
+}
+
+@keyframes fallIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* ✅ Mobile styles (hasta 425px) */
+@media screen and (max-width: 425px) {
+  .hero {
+    padding: 0px 0 100px 0;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 20px;
+  }
+
+  .hero-left {
+    flex: unset;
+    width: 100%;
+    text-align: left;
+    padding-left: 0;
+    order: 1;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .hero-name {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin: 0 0 10px 0;
+  }
+
+  .hero-right {
+    flex: unset;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    order: 2;
+  }
+
+  .hero-image {
+    width: 240px;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 0;
+  }
+
+  .hero-name .letter-fall {
+    font-size: 25px;
+    letter-spacing: -1.2px;
+    line-height: 1;
+  }
+
+  .letter-space {
+    width: 10px;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 767px) {
+  .hero {
+    padding: 0px 0 100px 0;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    padding: 0 24px;
+    gap: 22px;
+  }
+
+  .hero-left {
+    flex: unset;
+    width: 100%;
+    text-align: left;
+    padding-left: 0;
+    order: 1;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .hero-name {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin: 0 0 10px 0;
+  }
+
+  .hero-right {
+    flex: unset;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    order: 2;
+  }
+
+  .hero-image {
+    width: 260px;       /* ✅ Levemente más grande que en móvil */
+    height: auto;
+    margin-top: 25px;
+    margin-right: 0;
+  }
+
+  .hero-name .letter-fall {
+    font-size: 34px;    /* ✅ Más grande que móvil */
+    letter-spacing: -1.5px;
+    line-height: 1.1;
+  }
+
+  .letter-space {
+    width: 12px;
+  }
+}
+
+
+/* ✅ Tablet vertical (iPad 10ª generación) */
+@media screen and (min-width: 768px) and (max-width: 834px) {
+  .hero {
+    padding: 100px 0 100px 0;
+    box-sizing: border-box;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    padding: 0 20px;
+    box-sizing: border-box;
+    gap: 25px;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .hero-left {
+    margin-top: 320px; /* ✅ AJUSTE CLAVE para alinear texto con imagen */
+  }
+
+  .hero-subtitle {
+    font-size: 17px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+  .hero-name {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 0 -33px 0;
+  }
+
+  .hero-name .letter-fall {
+    font-size: 41px;
+    letter-spacing: -3px;
+    line-height: 1.1;
+  }
+
+  .letter-space {
+    width: 6px;
+  }
+
+  .hero-image {
+    width: 300px;
+    height: auto;
+    margin-top: -800px;
+    margin-right: 0;
+  }
+}
+
+/* ✅ Tablet horizontal (835px–1023px) */
+@media screen and (min-width: 835px) and (max-width: 1023px) {
+  .hero {
+    padding: 120px 0 100px 0;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    padding: 0 30px;
+    gap: 25px;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .hero-left {
+    margin-top: 320px;
+  }
+
+  .hero-subtitle {
+    font-size: 17px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+  .hero-name {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 0 -33px 0;
+  }
+
+  .hero-name .letter-fall {
+    font-size: 47px;
+    letter-spacing: -3px;
+    line-height: 1.1;
+  }
+
+  .letter-space {
+    width: 6px;
+  }
+
+  .hero-image {
+    width: 300px;
+    height: auto;
+    margin-top: -750px; /* solo ajusta este valor según necesidad visual */
+    margin-right: 0;
+  }
+}
+
+/* ✅ HERO para LAPTOP / TABLET GRANDE (1024px–1279px) */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .hero {
+    padding: 100px 0 100px 0;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    padding: 0 40px;
+    gap: 25px;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .hero-left {
+    margin-top: 320px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+  .hero-name {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 0 -35px 0;
+  }
+
+  .hero-name .letter-fall {
+    font-size: 59px;
+    letter-spacing: -3px;
+    line-height: 1.1;
+  }
+
+  .letter-space {
+    width: 6px;
+  }
+
+  .hero-image {
+    width: 330px;
+    height: auto;
+    margin-top: -750px;
+    margin-right: 0;
+  }
+}
+
+
+
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+  .hero {
+    padding:0px 0 100px 0;
+    background-color: #ffffff;
+    margin-top: -45px;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    padding: 0 40px;
+    gap: 25px;
+    box-sizing: border-box;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .hero-left {
+    margin-top: 320px;
+  }
+
+  .hero-subtitle {
+    font-family: 'PPNeueMontreal-book', sans-serif; /* ✅ Fuente correcta */
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #1a1a1a;
+  }
+
+  .hero-name {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 0 -45px 0;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .hero-name .letter-fall {
+    font-family: 'Arial', sans-serif; /* ✅ Fuente del nombre */
+    font-weight: bold;
+    font-size: 87px; /* ✅ Tamaño para laptop grande */
+    letter-spacing: -4px;
+    line-height: 1.1;
+    color: #000000;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: fallIn 1.2s ease-out forwards;
+  }
+
+  .letter-space {
+    display: inline-block;
+    width: 6px;
+  }
+
+  .hero-image {
+  width: 300px;
+  height: auto;
+  position: relative;
+  top: 2px; /* ✅ Mueve la imagen hacia abajo sin afectar el flujo */
+  margin-top: -760px; /* Puedes seguir afinando si es necesario */
+  margin-right: 0;
+  border-radius: 0%;
+  object-fit: cover;
+}
+
+}
+
+@media screen and (min-width: 1920px) {
+  .hero {
+    padding: 120px 0 100px 0;
+    background-color: #ffffff;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    padding: 0 40px; /* ✅ Alineado con el header */
+    gap: 25px;
+    box-sizing: border-box;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .hero-left {
+    margin-top: 320px;
+  }
+
+  .hero-subtitle {
+    font-family: 'PPNeueMontreal-book', sans-serif;
+    font-size: 26px;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #1a1a1a;
+  }
+
+  .hero-name {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 0 -50px 0;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .hero-name .letter-fall {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 135px; /* ✅ Más grande para pantallas grandes */
+    letter-spacing: -4px;
+    line-height: 1.1;
+    color: #000000;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: fallIn 1.2s ease-out forwards;
+  }
+
+  .letter-space {
+    display: inline-block;
+    width: 6px;
+  }
+
+  .hero-image {
+    width: 360px;          /* ✅ Un poco más grande */
+    height: auto;
+    margin-top: -770px;    /* ✅ Ajustado visualmente */
+    margin-right: 0;
+    border-radius: 0%;
+    object-fit: cover;
+  }
+}
+
