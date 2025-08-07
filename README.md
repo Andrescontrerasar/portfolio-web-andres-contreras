@@ -21,4 +21,7 @@ This is my personal portfolio website, where I showcase my experience as a Proje
 
 ## 🧑‍💻 Project Structure
 
+## 📫 Contact
+
+You can find me on [LinkedIn](https://www.linkedin.com/in/andrescontrerasar/) or email me at contact@andrescontreras.com
 
